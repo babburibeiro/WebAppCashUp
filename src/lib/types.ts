@@ -44,11 +44,18 @@ export type MonthSummary = {
   transactionCount: number;
 };
 
-// User Profile
+// User Profile - Expandido com informações do onboarding
 export type UserProfile = {
   name: string;
   age: number;
   monthlySalary: number;
   onboardingCompleted: boolean;
   createdAt: string;
+  
+  // Novas informações do onboarding
+  tracksExpenses?: boolean; // Se costuma anotar gastos
+  mainGoal?: string; // Objetivo financeiro principal
+  biggestExpenseArea?: string; // Onde mais gasta
+  trackingFrequency?: string; // Frequência de acompanhamento
+  wantsPersonalizedTips?: boolean; // Se deseja dicas personalizadas
 };
